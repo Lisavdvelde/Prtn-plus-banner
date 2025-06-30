@@ -1,9 +1,9 @@
 const tl = gsap.timeline();
 
 tl.set(".neutraal-img-voorkant", {
-  scale: 0.6,
-  top: 280,
-  left: 70
+  x: 56,
+  y: 236,
+  scale: 0.6
 }, 0)
 
 .to(".groen-element", { 
@@ -15,13 +15,12 @@ tl.set(".neutraal-img-voorkant", {
 }, 0)
 
 .to(".neutraal-img-voorkant", {
+  x: 0,
+  y: 0,
   scale: 1,
-  top: 44,
-  left: 14,
-  duration: 2,
+  duration: 1.5,
   ease: "power2.out"
 }, 0)
-
 
 tl.from(".usp1", { x: -270, duration: 1 }, ">")
   .from(".usp2", { x: -270, duration: 1 }, ">")
